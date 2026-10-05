@@ -1,0 +1,1761 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NGHIÊM TRƯỜNG HUY // Portfolio — Born Pink Edition</title>
+  <meta name="description" content="Portfolio cá nhân của Nghiêm Trường Huy — Sinh viên Khoa Kinh tế Quốc tế, Trường Đại học Ngoại thương (FTU). Phó Ban Đối ngoại FBIS FTU, Nghiên cứu học thuật và Gia sư Toán.">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            obsidian: '#0b0b0b',
+            charcoal: '#141414',
+            surface: '#1f1f1f',
+            neonPink: '#ff2a85',
+            hotPink: '#ff1493',
+            silver: '#e5e5e5'
+          },
+          fontFamily: {
+            display: ['Montserrat', 'sans-serif'],
+            editorial: ['Playfair Display', 'serif'],
+            body: ['Be Vietnam Pro', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom Stylesheet (100% Việt Hóa Fonts) -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-[#0b0b0b] text-white selection:bg-[#ff2a85] selection:text-black relative font-body">
+
+  <!-- ===================================================================
+       COACHELLA 30-SECOND CINEMATIC INTRO EXPERIENCE
+       =================================================================== -->
+  <div id="coachella-intro-overlay" role="dialog" aria-modal="true" aria-label="Blackpink Coachella 30s Intro Experience">
+    <!-- Embedded Fullscreen Coachella MV / Live Stage Video -->
+    <div class="intro-video-frame">
+      <iframe 
+        id="intro-coachella-iframe"
+        src="https://www.youtube-nocookie.com/embed/gQlMMD8auMs?autoplay=1&mute=1&loop=0&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1&enablejsapi=1" 
+        title="BLACKPINK Live at Coachella 2023 - 30s Intro Experience" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen
+        class="w-full h-full object-cover">
+      </iframe>
+    </div>
+
+    <!-- Scrim / Dark High-Fashion Vignette -->
+    <div class="intro-video-overlay-scrim"></div>
+
+    <!-- Top Action Bar -->
+    <header class="intro-ui-layer p-6 sm:p-10 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-red-500/50 bg-red-950/40 text-red-400 text-xs font-display font-bold uppercase tracking-widest backdrop-blur-md intro-badge-glow">
+          <span class="w-2 h-2 rounded-full bg-red-500 animate-ping"></span>
+          LIVE COACHELLA STAGE
+        </span>
+        <span class="hidden sm:inline-block text-xs font-display text-gray-400 tracking-wider">
+          BLACKPINK BORN PINK WORLD TOUR
+        </span>
+      </div>
+
+      <div class="flex items-center gap-3 sm:gap-4">
+        <!-- Sound Toggle Button -->
+        <button id="intro-sound-toggle-btn" class="flex items-center gap-2 px-3.5 py-2 rounded-full border border-white/20 bg-black/60 backdrop-blur-md text-xs font-display font-bold text-white hover:text-[#ff2a85] hover:border-[#ff2a85] transition-all">
+          <span id="intro-sound-icon">🔊</span>
+          <span id="intro-sound-text">BẬT ÂM THANH</span>
+          <!-- Dynamic equalizer bars -->
+          <div class="flex items-end gap-1 h-4 ml-1" id="intro-eq-waves">
+            <span class="intro-eq-bar"></span>
+            <span class="intro-eq-bar"></span>
+            <span class="intro-eq-bar"></span>
+            <span class="intro-eq-bar"></span>
+            <span class="intro-eq-bar"></span>
+          </div>
+        </button>
+
+        <!-- Skip Intro Button -->
+        <button id="intro-skip-btn" class="flex items-center gap-2 px-4 py-2 rounded-full bg-[#ff2a85] text-black font-display font-black text-xs uppercase tracking-widest hover:bg-white hover:shadow-[0_0_20px_#ff2a85] transition-all">
+          <span>BỎ QUA INTRO</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5l7 7-7 7M5 5l7 7-7 7" />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- Center Heroic Editorial Branding -->
+    <div class="intro-ui-layer text-center px-6 max-w-4xl mx-auto my-auto flex flex-col items-center gap-4">
+      <div class="inline-flex items-center gap-2 px-4 py-1 rounded border border-[#ff2a85]/40 bg-[#ff2a85]/10 text-[#ff2a85] text-xs font-display font-black tracking-[0.25em] uppercase">
+        CINEMATIC INTRO (30 SECONDS)
+      </div>
+
+      <h1 class="font-display font-black text-3xl sm:text-5xl md:text-6xl uppercase tracking-tighter text-white drop-shadow-[0_0_35px_rgba(255,42,133,0.7)] leading-none">
+        NGHIÊM TRƯỜNG HUY
+      </h1>
+
+      <p class="font-editorial italic text-lg sm:text-2xl text-pink-200/90 tracking-wide max-w-2xl">
+        Kinh tế Quốc tế // Ngoại thương FTU // Born Pink Vibe
+      </p>
+
+      <div class="mt-2 text-xs font-display text-gray-300/80 bg-black/50 backdrop-blur-md px-4 py-2 rounded-full border border-white/10 flex items-center gap-2">
+        <span>⏱️ Tự động chuyển vào Portfolio sau:</span>
+        <span id="intro-countdown-timer" class="font-black text-[#ff2a85] text-sm tabular-nums">30s</span>
+      </div>
+    </div>
+
+    <!-- Bottom Progress & Info Bar -->
+    <footer class="intro-ui-layer w-full p-6 sm:p-10 flex flex-col gap-3">
+      <div class="flex items-center justify-between text-[11px] font-display font-bold tracking-wider text-gray-400">
+        <span class="flex items-center gap-2">
+          <span class="w-1.5 h-1.5 rounded-full bg-[#ff2a85]"></span>
+          <span>BLACKPINK LIVE AT COACHELLA 2023 — PINK VENOM / BOOMBAYAH</span>
+        </span>
+        <div class="flex items-center gap-2 text-white">
+          <span id="intro-time-elapsed">0:00</span>
+          <span>/</span>
+          <span>0:30</span>
+        </div>
+      </div>
+
+      <!-- Animated 30-Second Progress Track -->
+      <div class="intro-progress-track rounded-full">
+        <div id="intro-progress-bar" class="intro-progress-bar"></div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Subtle Film Grain Overlay -->
+  <div class="grain-overlay"></div>
+
+  <!-- Custom Neon Glow Cursor (Desktop) -->
+  <div id="custom-cursor" class="custom-cursor hidden lg:block"></div>
+  <div id="custom-cursor-follower" class="custom-cursor-follower hidden lg:block"></div>
+
+  <!-- Ambient Glow Blobs -->
+  <div class="ambient-glow-pink w-[550px] h-[550px] bg-[#ff2a85]/10 top-[-100px] left-[-150px]"></div>
+  <div class="ambient-glow-pink w-[600px] h-[600px] bg-[#ff1493]/08 top-[35%] right-[-200px]"></div>
+  <div class="ambient-glow-pink w-[500px] h-[500px] bg-[#ff2a85]/08 bottom-[5%] left-[-150px]"></div>
+
+  <!-- ===================================================================
+       HEADER & NAVIGATION BAR
+       =================================================================== -->
+  <header id="main-header" class="fixed top-0 left-0 w-full z-50 transition-all duration-300 px-6 sm:px-12 py-5">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="#hero" class="group flex items-center gap-3 text-decoration-none">
+        <div class="w-10 h-10 border border-[#ff2a85] bg-[#141414] flex items-center justify-center font-display font-black text-[#ff2a85] text-lg shadow-[0_0_15px_rgba(255,42,133,0.4)] group-hover:bg-[#ff2a85] group-hover:text-black transition-all duration-300 rounded">
+          H
+        </div>
+        <div class="flex flex-col">
+          <span class="font-display font-extrabold tracking-widest text-sm text-white group-hover:text-[#ff2a85] transition-colors">
+            NGHIÊM TRƯỜNG HUY
+          </span>
+          <span class="text-[10px] tracking-[0.2em] text-[#ff2a85] font-semibold uppercase">
+            BORN PINK // KINH TẾ QUỐC TẾ FTU
+          </span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="hidden md:flex items-center gap-8 text-xs font-display font-bold uppercase tracking-wider text-gray-300">
+        <a href="#about" class="desktop-nav-link hover:text-[#ff2a85] transition-colors">01. Giới Thiệu</a>
+        <a href="#experience" class="desktop-nav-link hover:text-[#ff2a85] transition-colors">02. Kinh Nghiệm & Học Vấn</a>
+        <a href="#projects" class="desktop-nav-link hover:text-[#ff2a85] transition-colors">03. Dự Án & Portfolio</a>
+        <a href="#skills" class="desktop-nav-link hover:text-[#ff2a85] transition-colors">04. Kỹ Năng</a>
+        <a href="#contact" class="desktop-nav-link hover:text-[#ff2a85] transition-colors">05. Liên Hệ</a>
+      </nav>
+
+      <!-- Right Action & CV Download -->
+      <div class="hidden sm:flex items-center gap-3">
+        <!-- Replay 30s Intro Button -->
+        <button id="replay-intro-btn" class="flex items-center gap-1.5 px-3 py-2 rounded border border-[#ff2a85]/50 bg-[#ff2a85]/10 text-[#ff2a85] hover:bg-[#ff2a85] hover:text-black transition-all text-xs font-display font-bold tracking-wider" title="Xem lại đoạn Intro Coachella 30s">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+          </svg>
+          <span>INTRO 30S</span>
+        </button>
+
+        <!-- Button Xem & Tải CV -->
+        <button data-open-cv class="flex items-center gap-2 px-3.5 py-2 rounded border border-white/20 bg-[#141414]/90 text-gray-300 hover:text-[#ff2a85] hover:border-[#ff2a85] transition-all text-xs font-display font-bold tracking-wider">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-[#ff2a85]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+          </svg>
+          <span>XEM CV</span>
+        </button>
+
+        <a href="#contact" class="btn-neon-pink text-xs !py-2.5 !px-5">
+          HỢP TÁC CÙNG TÔI
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button id="menu-toggle" class="md:hidden text-white hover:text-[#ff2a85] transition-colors p-2" aria-label="Open navigation menu">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div id="mobile-drawer" class="fixed inset-0 z-50 bg-black/95 backdrop-blur-2xl transform translate-x-full transition-transform duration-300 md:hidden flex flex-col justify-between p-8">
+    <div class="flex items-center justify-between">
+      <span class="font-display font-black text-[#ff2a85] text-lg tracking-widest">HUY.NGHIEM // MENU</span>
+      <button id="menu-close" class="text-white hover:text-[#ff2a85] p-2" aria-label="Close menu">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+        </svg>
+      </button>
+    </div>
+
+    <nav class="flex flex-col gap-6 text-xl font-display font-bold">
+      <a href="#hero" class="mobile-nav-link hover:text-[#ff2a85] transition-colors">00. Trang Chủ</a>
+      <a href="#about" class="mobile-nav-link hover:text-[#ff2a85] transition-colors">01. Giới Thiệu Bản Thân</a>
+      <a href="#experience" class="mobile-nav-link hover:text-[#ff2a85] transition-colors">02. Kinh Nghiệm & Học Vấn</a>
+      <a href="#projects" class="mobile-nav-link hover:text-[#ff2a85] transition-colors">03. Dự Án & Portfolio</a>
+      <a href="#skills" class="mobile-nav-link hover:text-[#ff2a85] transition-colors">04. Kỹ Năng & Ngôn Ngữ</a>
+      <a href="#contact" class="mobile-nav-link hover:text-[#ff2a85] transition-colors">05. Hợp Tác & Liên Hệ</a>
+    </nav>
+
+    <div class="border-t border-white/10 pt-6 flex flex-col gap-3">
+      <button id="mobile-replay-intro-btn" class="w-full py-3 bg-[#181818] border border-[#ff2a85]/60 text-[#ff2a85] font-display font-bold text-center rounded flex items-center justify-center gap-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+        </svg>
+        <span>🎬 XEM LẠI INTRO COACHELLA (30S)</span>
+      </button>
+      <button data-open-cv class="w-full py-3 bg-[#181818] border border-white/20 text-white font-display font-bold text-center rounded">
+        TẢI / XEM CV ĐẦY ĐỦ (PDF)
+      </button>
+      <a href="#contact" class="btn-neon-pink text-center py-3">Hợp Tác Cùng Tôi</a>
+    </div>
+  </div>
+
+  <!-- ===================================================================
+       HERO SECTION WITH BLACKPINK COACHELLA VIDEO BACKGROUND & PROMINENT PORTRAIT
+       =================================================================== -->
+  <section id="hero" class="min-h-screen relative flex flex-col justify-center pt-28 pb-16 px-6 sm:px-12 overflow-hidden">
+    
+    <!-- Embedded BLACKPINK Coachella Background Video -->
+    <div class="coachella-video-wrap">
+      <iframe 
+        id="coachella-bg-video"
+        src="https://www.youtube-nocookie.com/embed/gQlMMD8auMs?autoplay=1&mute=1&loop=1&playlist=gQlMMD8auMs&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1&enablejsapi=1" 
+        title="BLACKPINK Live at Coachella 2023 Video Background" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+      </iframe>
+      <!-- Dark Obsidian Gradients to ensure perfect text contrast -->
+      <div class="coachella-scrim"></div>
+    </div>
+
+    <div class="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center z-10 my-auto">
+      
+      <!-- Left Column: Editorial Headline & Personal Data -->
+      <div class="lg:col-span-7 flex flex-col gap-6">
+        
+        <!-- Concept Badges -->
+        <div class="flex flex-wrap items-center gap-3">
+          <span class="badge-pink">
+            <span class="w-2 h-2 rounded-full bg-[#ff2a85] animate-ping"></span>
+            BORN PINK VIBE • BLACKPINK COACHELLA STAGE
+          </span>
+          <span class="text-xs text-gray-300 font-semibold tracking-wider uppercase">
+            HÀ NỘI, VIỆT NAM
+          </span>
+        </div>
+
+        <!-- Main Title (Extracted from CV) -->
+        <div class="flex flex-col leading-tight">
+          <p class="text-xs sm:text-sm font-display font-bold text-[#ff2a85] tracking-[0.25em] uppercase mb-1.5">
+            SINH VIÊN KHOA KINH TẾ QUỐC TẾ • ĐẠI HỌC NGOẠI THƯƠNG
+          </p>
+          <h1 class="text-5xl sm:text-7xl xl:text-8xl font-display font-black tracking-tighter uppercase text-white">
+            NGHIÊM
+            <span class="block text-stroke-pink hover:text-[#ff2a85] transition-all duration-300">
+              TRƯỜNG HUY
+            </span>
+          </h1>
+        </div>
+
+        <!-- Bio Tagline from CV -->
+        <p class="text-base sm:text-lg text-gray-300 font-body max-w-xl leading-relaxed">
+          Sinh viên <strong class="text-white underline decoration-[#ff2a85]">Khoa Kinh tế Quốc tế — Trường Đại học Ngoại thương (FTU)</strong> với đam mê kiến tạo giá trị trong <span class="text-[#ff2a85] font-semibold">quan hệ đối ngoại</span>, <span class="text-white font-semibold">xúc tiến tài trợ</span>, <span class="text-[#ff2a85] font-semibold">nghiên cứu học thuật</span> và <span class="text-white font-semibold">giảng dạy tư duy toán học</span>.
+        </p>
+
+        <!-- Quick Snapshot Metrics -->
+        <div class="grid grid-cols-3 gap-4 pt-1 pb-1 max-w-md">
+          <div class="border-l-2 border-[#ff2a85] pl-3.5">
+            <div class="text-2xl sm:text-3xl font-display font-black text-[#ff2a85]">3.8<span class="text-xs text-gray-400">/4.0</span></div>
+            <div class="text-[11px] font-bold text-gray-300 uppercase tracking-wider">GPA Ngoại Thương</div>
+          </div>
+          <div class="border-l-2 border-white/30 pl-3.5">
+            <div class="text-2xl sm:text-3xl font-display font-black text-white">FBIS</div>
+            <div class="text-[11px] font-bold text-gray-300 uppercase tracking-wider">Phó Ban Đối Ngoại</div>
+          </div>
+          <div class="border-l-2 border-white/30 pl-3.5">
+            <div class="text-2xl sm:text-3xl font-display font-black text-white">2023+</div>
+            <div class="text-[11px] font-bold text-gray-300 uppercase tracking-wider">Gia Sư Môn Toán</div>
+          </div>
+        </div>
+
+        <!-- CTAs & Audio Toggle -->
+        <div class="flex flex-wrap items-center gap-4 pt-2">
+          <a href="#projects" class="btn-neon-pink">
+            KHÁM PHÁ PROJECT
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+            </svg>
+          </a>
+          <button data-open-cv class="btn-obsidian-glass">
+            XEM & TẢI CV (PDF)
+          </button>
+          
+          <!-- Sound Toggle for Coachella Video -->
+          <button id="coachella-sound-toggle" class="px-3.5 py-3 rounded border border-white/20 bg-[#141414]/90 text-gray-300 hover:text-[#ff2a85] hover:border-[#ff2a85] transition-all text-xs font-display font-bold flex items-center gap-2">
+            <span>🔊</span>
+            <span>BẬT / TẮT ÂM THANH COACHELLA</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Right Column: PROMINENT STYLIZED PERSONAL PORTRAIT FRAME WITH NEON PINK GLOW -->
+      <div class="lg:col-span-5 flex justify-center items-center relative">
+        
+        <!-- Outer Rotating Neon Aura Pulse Ring -->
+        <div class="absolute w-[350px] h-[490px] sm:w-[410px] sm:h-[550px] border border-[#ff2a85]/40 rounded-3xl aura-pulse pointer-events-none"></div>
+
+        <!-- High-Fashion Portrait Card Container -->
+        <div class="fashion-frame relative w-[310px] sm:w-[370px] h-[460px] sm:h-[520px] portrait-card-hero flex flex-col justify-between p-4 group">
+          
+          <!-- Top Geometric & Glassmorphism Badges -->
+          <div class="relative z-20 flex items-center justify-between text-xs pb-2">
+            <span class="badge-pink !text-[10px] !py-1 !px-2.5 backdrop-blur-md bg-black/60 border-[#ff2a85]/60 shadow-[0_0_12px_rgba(255,42,133,0.4)]">
+              ✦ BORN PINK // 2026
+            </span>
+            <span class="text-[10px] font-display font-bold text-white bg-black/60 px-2.5 py-1 rounded-full border border-white/20 backdrop-blur-md">
+              FTU • HÀ NỘI
+            </span>
+          </div>
+
+          <!-- Main Portrait Image Container -->
+          <div class="relative w-full h-[320px] sm:h-[370px] rounded-xl overflow-hidden bg-black/80 my-auto border border-white/10 group-hover:border-[#ff2a85]/40 transition-colors">
+            <!-- Portrait Image Tag (User's Official CV Photo) -->
+            <img 
+              id="hero-portrait-img"
+              src="assets/huy-portrait.jpg" 
+              alt="Nghiêm Trường Huy — Chân dung đại diện" 
+              class="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
+              loading="eager"
+            >
+            <!-- Subtle Dark & Neon Vignette -->
+            <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent pointer-events-none"></div>
+            
+            <!-- Floating Badges Layered on Portrait -->
+            <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between pointer-events-none z-10">
+              <span class="px-2.5 py-1 rounded bg-black/80 backdrop-blur-md border border-[#ff2a85]/50 text-[10px] font-display font-black text-[#ff2a85] shadow-[0_0_10px_rgba(255,42,133,0.3)]">
+                GPA 3.8 / 4.0
+              </span>
+              <span class="px-2.5 py-1 rounded bg-black/80 backdrop-blur-md border border-white/20 text-[10px] font-display font-bold text-white">
+                PHÓ BAN ĐỐI NGOẠI
+              </span>
+            </div>
+          </div>
+
+          <!-- Bottom Nameplate in Portrait Card -->
+          <div class="relative z-20 border-t border-white/15 pt-3 flex items-center justify-between">
+            <div>
+              <h3 class="font-display font-black text-lg text-white uppercase tracking-wider leading-none">
+                Nghiêm Trường Huy
+              </h3>
+              <p class="text-[11px] font-bold text-[#ff2a85] uppercase tracking-wider mt-1">
+                KHOA KINH TẾ QUỐC TẾ — FTU
+              </p>
+            </div>
+
+            <!-- Quick Interactive Photo URL Customizer Button -->
+            <button 
+              id="change-hero-photo-btn"
+              title="Đổi ảnh đại diện / Thay link ảnh của bạn" 
+              class="px-2.5 py-1.5 rounded bg-[#ff2a85]/20 hover:bg-[#ff2a85] text-[#ff2a85] hover:text-black border border-[#ff2a85]/60 transition-all text-[10px] font-display font-bold flex items-center gap-1"
+            >
+              <span>📷</span>
+              <span>ĐỔI ẢNH</span>
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Smooth Marquee Scrolling Text Band -->
+    <div class="w-full overflow-hidden border-y border-[#ff2a85]/30 bg-black/85 backdrop-blur-md py-3.5 mt-16 z-10">
+      <div class="marquee-track flex items-center gap-10 text-xs sm:text-sm font-display font-black tracking-[0.2em] uppercase text-gray-200">
+        <span class="text-[#ff2a85]">★ CREATIVE INNOVATOR • BORN PINK VIBE • EDGY DESIGNER</span>
+        <span>TRƯỜNG ĐẠI HỌC NGOẠI THƯƠNG (FTU)</span>
+        <span class="text-[#ff2a85]">★ KHOA KINH TẾ QUỐC TẾ (GPA 3.8/4.0)</span>
+        <span>PHÓ BAN ĐỐI NGOẠI FBIS FTU</span>
+        <span class="text-[#ff2a85]">★ ACADEMIC RESEARCH PROJECTS</span>
+        <span>GIA SƯ TOÁN CHUYÊN SÂU</span>
+        <span class="text-[#ff2a85]">★ BLACKPINK COACHELLA STAGE CONCEPT</span>
+        <span>XÚC TIẾN TÀI TRỢ & QUAN HỆ ĐỐI TÁC</span>
+        <span class="text-[#ff2a85]">★ CREATIVE INNOVATOR • BORN PINK VIBE • EDGY DESIGNER</span>
+        <span>TRƯỜNG ĐẠI HỌC NGOẠI THƯƠNG (FTU)</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       ABOUT ME SECTION: 2-COLUMN LAYOUT EXTRACTED FROM CV
+       =================================================================== -->
+  <section id="about" class="py-24 px-6 sm:px-12 relative z-10">
+    <div class="max-w-7xl mx-auto">
+      
+      <!-- Section Header -->
+      <div class="flex flex-col mb-16">
+        <div class="flex items-center gap-3">
+          <span class="text-xs font-display font-bold text-[#ff2a85] tracking-widest uppercase">01 // PROFILE & THÔNG TIN CÁ NHÂN</span>
+          <div class="h-[1px] w-24 bg-[#ff2a85]/40"></div>
+        </div>
+        <h2 class="text-4xl sm:text-6xl font-display font-black uppercase tracking-tight text-white mt-2">
+          GIỚI THIỆU <span class="text-stroke-pink">BẢN THÂN</span>
+        </h2>
+      </div>
+
+      <!-- 2-Column Grid -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+        
+        <!-- Left Column: Sleek Dossier Card & Photo Frame -->
+        <div class="lg:col-span-5 flex flex-col gap-6">
+          <div class="glass-panel-neon rounded-2xl p-6 sm:p-8 relative overflow-hidden">
+            <!-- Background Watermark -->
+            <div class="absolute -right-6 -bottom-6 font-display text-9xl font-black text-white/[0.03] select-none pointer-events-none">
+              FTU
+            </div>
+
+            <!-- Header of card -->
+            <div class="flex items-center justify-between border-b border-white/10 pb-4 mb-6">
+              <span class="text-xs text-gray-400 font-semibold uppercase">ĐỊA BÀN HOẠT ĐỘNG</span>
+              <span class="text-xs text-[#ff2a85] font-bold flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-[#ff2a85] animate-ping"></span>
+                HÀ NỘI, VIỆT NAM
+              </span>
+            </div>
+
+            <!-- Alternative Stylized Secondary Photo Frame (About Section) -->
+            <div class="fashion-frame portrait-card-about w-full h-72 sm:h-80 relative overflow-hidden mb-6 flex flex-col justify-between p-3.5 group">
+              <!-- Top Card Meta -->
+              <div class="relative z-20 flex items-center justify-between text-[11px] font-display font-bold">
+                <span class="text-[#ff2a85] tracking-widest uppercase bg-black/70 px-2.5 py-1 rounded backdrop-blur-md border border-[#ff2a85]/40 text-[10px]">
+                  ISSUE 01 // THE STRATEGIST
+                </span>
+                <span class="text-gray-300 bg-black/70 px-2 py-1 rounded backdrop-blur-md border border-white/20 text-[10px]">
+                  FTU • 2026
+                </span>
+              </div>
+
+              <!-- Main Image Tag (User's Official Photo) -->
+              <div class="absolute inset-0 w-full h-full overflow-hidden">
+                <img 
+                  id="about-portrait-img"
+                  src="assets/huy-portrait.jpg" 
+                  alt="Nghiêm Trường Huy — Chân dung đại diện" 
+                  class="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
+                  loading="lazy"
+                >
+                <!-- Stylized Obsidian & Hot Pink Duotone Sheen -->
+                <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
+              </div>
+
+              <!-- Bottom Overlay Details & Photo Change Button -->
+              <div class="relative z-20 flex items-end justify-between pt-2">
+                <div>
+                  <h4 class="font-display font-black text-white text-base uppercase tracking-wider leading-none drop-shadow-md">
+                    Nghiêm Trường Huy
+                  </h4>
+                  <p class="text-[10px] font-bold text-[#ff2a85] uppercase tracking-wider mt-1 drop-shadow">
+                    KINH TẾ QUỐC TẾ FTU (GPA 3.8)
+                  </p>
+                </div>
+                <button 
+                  id="change-about-photo-btn"
+                  title="Đổi ảnh giới thiệu / Thay link ảnh" 
+                  class="px-2 py-1 rounded bg-[#ff2a85]/20 hover:bg-[#ff2a85] text-[#ff2a85] hover:text-black border border-[#ff2a85]/50 transition-all text-[10px] font-display font-bold backdrop-blur-md"
+                >
+                  📷 ĐỔI ẢNH
+                </button>
+              </div>
+            </div>
+
+            <!-- Quick Specs Table from CV -->
+            <div class="border-t border-white/10 pt-4 flex flex-col gap-3 text-xs">
+              <div class="flex justify-between">
+                <span class="text-gray-400">Trường Đại Học:</span>
+                <span class="text-white font-semibold text-right">Đại học Ngoại thương (FTU)</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-gray-400">Chuyên Ngành:</span>
+                <span class="text-white font-semibold text-right">Kinh tế Quốc tế (International Economics)</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-gray-400">Điểm GPA Tích Lũy:</span>
+                <span class="text-[#ff2a85] font-black text-sm">3.8 / 4.0</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-gray-400">Chức Vụ CLB:</span>
+                <span class="text-white font-semibold text-right">Phó Ban Đối Ngoại (FBIS FTU)</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-gray-400">Email:</span>
+                <span class="text-gray-200 font-mono text-right">nghiemtruonghuy200608@gmail.com</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-gray-400">Số Điện Thoại:</span>
+                <span class="text-[#ff2a85] font-mono text-right font-bold">+84 - 38 542 8028</span>
+              </div>
+            </div>
+
+            <!-- Action buttons in card -->
+            <div class="mt-6 pt-4 border-t border-white/10 flex items-center justify-between">
+              <button data-copy-value="nghiemtruonghuy200608@gmail.com" data-copy-label="Email" class="text-xs text-[#ff2a85] hover:text-white font-bold transition-colors">
+                COPY EMAIL
+              </button>
+              <button data-copy-value="+84385428028" data-copy-label="Số Điện Thoại" class="text-xs text-gray-400 hover:text-white font-bold transition-colors">
+                COPY SĐT
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: CV Profile Summary, Stats & Core Competencies -->
+        <div class="lg:col-span-7 flex flex-col gap-10">
+          
+          <!-- Exact Bio from CV -->
+          <div class="flex flex-col gap-4">
+            <span class="badge-pink !text-xs w-max">TÓM TẮT TIỂU SỬ & MỤC TIÊU NGHỀ NGHIỆP</span>
+            <blockquote class="font-editorial text-xl sm:text-2xl text-gray-100 italic leading-relaxed border-l-2 border-[#ff2a85] pl-4 my-1">
+              "Sinh viên Khoa Kinh tế Quốc tế tại Trường Đại học Ngoại thương với kinh nghiệm trong giảng dạy gia sư, quan hệ đối ngoại, tổ chức sự kiện và nghiên cứu học thuật."
+            </blockquote>
+            <p class="text-gray-300 text-sm sm:text-base leading-relaxed">
+              Hoạt động tích cực trong các tổ chức sinh viên, đặc biệt là <strong class="text-white">phát triển quan hệ hợp tác đối tác, xúc tiến tài trợ và truyền thông</strong>. Sở hữu niềm đam mê mạnh mẽ với kinh doanh, kinh tế quốc tế và không ngừng trau dồi các kỹ năng thực tiễn thông qua các hoạt động ngoại khóa cùng dự án nghiên cứu học thuật chuyên sâu.
+            </p>
+          </div>
+
+          <!-- Highlighted Stats Counters -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+            
+            <div class="glass-panel p-5 rounded-xl border border-white/10 flex flex-col justify-center">
+              <div class="text-3xl sm:text-4xl font-display font-black text-[#ff2a85] flex items-baseline">
+                <span data-counter="3.8" data-decimals="1">0.0</span>
+                <span class="text-xs text-gray-400 ml-1">/4.0</span>
+              </div>
+              <div class="text-xs font-bold text-gray-300 uppercase tracking-wider mt-1.5">
+                GPA Tích Lũy FTU
+              </div>
+            </div>
+
+            <div class="glass-panel p-5 rounded-xl border border-white/10 flex flex-col justify-center">
+              <div class="text-3xl sm:text-4xl font-display font-black text-white flex items-baseline">
+                <span data-counter="2024" data-decimals="0">0</span>
+              </div>
+              <div class="text-xs font-bold text-gray-300 uppercase tracking-wider mt-1.5">
+                Phó Ban Đối Ngoại
+              </div>
+            </div>
+
+            <div class="glass-panel p-5 rounded-xl border border-white/10 flex flex-col justify-center">
+              <div class="text-3xl sm:text-4xl font-display font-black text-white flex items-baseline">
+                <span data-counter="2023" data-decimals="0">0</span>
+                <span class="text-[#ff2a85] ml-0.5">+</span>
+              </div>
+              <div class="text-xs font-bold text-gray-300 uppercase tracking-wider mt-1.5">
+                Gia Sư Môn Toán
+              </div>
+            </div>
+
+            <div class="glass-panel p-5 rounded-xl border border-white/10 flex flex-col justify-center">
+              <div class="text-3xl sm:text-4xl font-display font-black text-white flex items-baseline">
+                <span data-counter="4" data-decimals="0">0</span>
+              </div>
+              <div class="text-xs font-bold text-gray-300 uppercase tracking-wider mt-1.5">
+                Ngôn Ngữ Toàn Cầu
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Môn học tiêu biểu tại FTU (Relevant Coursework from CV) -->
+          <div class="glass-panel p-6 rounded-xl border border-white/10">
+            <h4 class="text-xs font-display font-bold text-[#ff2a85] uppercase tracking-widest mb-3">
+              MÔN HỌC TIÊU BIỂU TẠI KHOA KINH TẾ QUỐC TẾ (RELEVANT COURSEWORK)
+            </h4>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1.5 rounded bg-white/5 border border-white/10 text-xs text-gray-200">International Economics (Kinh tế quốc tế)</span>
+              <span class="px-3 py-1.5 rounded bg-white/5 border border-white/10 text-xs text-gray-200">Macroeconomics (Kinh tế vĩ mô)</span>
+              <span class="px-3 py-1.5 rounded bg-white/5 border border-white/10 text-xs text-gray-200">International Investment (Đầu tư quốc tế)</span>
+              <span class="px-3 py-1.5 rounded bg-white/5 border border-white/10 text-xs text-gray-200">Development Economics (Kinh tế phát triển)</span>
+              <span class="px-3 py-1.5 rounded bg-white/5 border border-white/10 text-xs text-gray-200">Tourism Economics (Kinh tế du lịch)</span>
+              <span class="px-3 py-1.5 rounded bg-white/5 border border-white/10 text-xs text-gray-200">Circular Economy (Kinh tế tuần hoàn)</span>
+              <span class="px-3 py-1.5 rounded bg-white/5 border border-white/10 text-xs text-gray-200">Research Methods in Economics and Business (Phương pháp nghiên cứu)</span>
+            </div>
+          </div>
+
+          <!-- CTAs to view Journey or Download CV -->
+          <div class="flex flex-wrap gap-4">
+            <a href="#experience" class="btn-neon-pink text-xs">
+              XEM LỊCH TRÌNH KINH NGHIỆM ↓
+            </a>
+            <button data-open-cv class="btn-obsidian-glass text-xs">
+              MỞ BẢN CV PDF CHÍNH THỨC
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       WORK EXPERIENCE & EDUCATION: TIMELINE WITH SLEEK NEON CONNECTORS
+       =================================================================== -->
+  <section id="experience" class="py-24 px-6 sm:px-12 relative z-10 bg-[#080808]">
+    <div class="max-w-5xl mx-auto">
+      
+      <!-- Section Header -->
+      <div class="flex flex-col items-center text-center mb-20">
+        <div class="flex items-center gap-3">
+          <div class="h-[1px] w-16 bg-[#ff2a85]/40"></div>
+          <span class="text-xs font-display font-bold text-[#ff2a85] tracking-widest uppercase">02 // HÀNH TRÌNH PHÁT TRIỂN</span>
+          <div class="h-[1px] w-16 bg-[#ff2a85]/40"></div>
+        </div>
+        <h2 class="text-4xl sm:text-6xl font-display font-black uppercase tracking-tight text-white mt-2">
+          KINH NGHIỆM <span class="text-stroke-pink">& HỌC VẤN</span>
+        </h2>
+        <p class="text-gray-400 text-sm max-w-lg mt-3">
+          Dữ liệu trích xuất chính xác theo thứ tự các mốc thời gian từ Resume/CV cá nhân.
+        </p>
+      </div>
+
+      <!-- Timeline Container -->
+      <div class="relative py-4">
+        <!-- Glowing Neon Stem Line -->
+        <div class="timeline-stem"></div>
+
+        <div class="space-y-16">
+          
+          <!-- 1. HỌC VẤN: ĐẠI HỌC NGOẠI THƯƠNG -->
+          <div class="relative flex flex-col md:flex-row items-start md:items-center">
+            <!-- Left Side Content -->
+            <div class="w-full md:w-1/2 md:pr-12 md:text-right pl-12 md:pl-0">
+              <span class="badge-pink !text-[11px] mb-2">2024 - HIỆN TẠI // HỌC VẤN</span>
+              <h3 class="text-2xl font-display font-black uppercase text-white">Trường Đại Học Ngoại Thương</h3>
+              <p class="text-sm text-[#ff2a85] font-bold mt-1">
+                Bachelor of International Economics (Kinh Tế Quốc Tế)
+              </p>
+              <div class="mt-2 text-xs text-gray-300 leading-relaxed space-y-1.5">
+                <p><strong class="text-white">Điểm GPA: 3.8 / 4.0</strong></p>
+                <p class="text-gray-400">
+                  <strong class="text-gray-300">Relevant Coursework:</strong> International Economics, Macroeconomics, International Investment, Development Economics, Tourism Economics, Circular Economy, Research Methods in Economics and Business.
+                </p>
+              </div>
+            </div>
+
+            <!-- Center Glowing Node -->
+            <div class="absolute left-5 md:left-1/2 transform -translate-x-1/2 w-6 h-6 rounded-full bg-black border-2 border-[#ff2a85] flex items-center justify-center shadow-[0_0_15px_#ff2a85] z-10">
+              <span class="w-2 h-2 rounded-full bg-[#ff2a85]"></span>
+            </div>
+
+            <!-- Right Spacer -->
+            <div class="w-full md:w-1/2 md:pl-12 hidden md:block"></div>
+          </div>
+
+          <!-- 2. WORK EXPERIENCE: FBIS FTU -->
+          <div class="relative flex flex-col md:flex-row items-start md:items-center">
+            <!-- Left Spacer -->
+            <div class="w-full md:w-1/2 md:pr-12 hidden md:block"></div>
+
+            <!-- Center Glowing Node -->
+            <div class="absolute left-5 md:left-1/2 transform -translate-x-1/2 w-6 h-6 rounded-full bg-black border-2 border-[#ff2a85] flex items-center justify-center shadow-[0_0_15px_#ff2a85] z-10">
+              <span class="w-2 h-2 rounded-full bg-[#ff2a85]"></span>
+            </div>
+
+            <!-- Right Side Content -->
+            <div class="w-full md:w-1/2 md:pl-12 pl-12">
+              <span class="badge-pink !text-[11px] mb-2">2024 - 2025 // KINH NGHIỆM</span>
+              <h3 class="text-2xl font-display font-black uppercase text-white">FBIS FTU</h3>
+              <p class="text-sm text-[#ff2a85] font-bold mt-1">
+                Phó Ban Đối Ngoại (Deputy Head of External Relations Committee)
+              </p>
+              <ul class="mt-3 text-xs text-gray-300 leading-relaxed space-y-2 list-none">
+                <li class="flex items-start gap-2">
+                  <span class="text-[#ff2a85] font-bold">✦</span>
+                  <span>Hỗ trợ các hoạt động đối ngoại, bao gồm tiếp cận và kết nối nhà tài trợ, truyền thông đối tác và điều phối sự kiện.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-[#ff2a85] font-bold">✦</span>
+                  <span>Xây dựng và duy trì mối quan hệ bền vững với các nhà tài trợ, đối tác và các tổ chức bên ngoài.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-[#ff2a85] font-bold">✦</span>
+                  <span>Đóng góp vào việc soạn thảo hồ sơ tài trợ, thư mời, ấn phẩm truyền thông và các hoạt động hợp tác.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-[#ff2a85] font-bold">✦</span>
+                  <span>Phối hợp chặt chẽ với các ban bộ phận tổ chức chiến dịch tuyển dụng, workshops và các sự kiện câu lạc bộ.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- 3. WORK EXPERIENCE: ACADEMIC RESEARCH PROJECTS -->
+          <div class="relative flex flex-col md:flex-row items-start md:items-center">
+            <!-- Left Side Content -->
+            <div class="w-full md:w-1/2 md:pr-12 md:text-right pl-12 md:pl-0">
+              <span class="badge-pink !text-[11px] mb-2">2024 - 2025 // KINH NGHIỆM</span>
+              <h3 class="text-2xl font-display font-black uppercase text-white">Academic Research Projects</h3>
+              <p class="text-sm text-[#ff2a85] font-bold mt-1">
+                Thành Viên Nhóm Nghiên Cứu (Research Team Member)
+              </p>
+              <ul class="mt-3 text-xs text-gray-300 leading-relaxed space-y-2 list-none md:flex md:flex-col md:items-end">
+                <li class="flex items-start gap-2 md:flex-row-reverse md:text-right">
+                  <span class="text-[#ff2a85] font-bold">✦</span>
+                  <span>Thực hiện nghiên cứu về các chủ đề liên quan đến kinh tế quốc tế, kinh tế phát triển, giáo dục, thương mại và tính bền vững.</span>
+                </li>
+                <li class="flex items-start gap-2 md:flex-row-reverse md:text-right">
+                  <span class="text-[#ff2a85] font-bold">✦</span>
+                  <span>Thu thập, phân tích dữ liệu kinh tế và rà soát các tài liệu học thuật phục vụ các dự án nghiên cứu.</span>
+                </li>
+                <li class="flex items-start gap-2 md:flex-row-reverse md:text-right">
+                  <span class="text-[#ff2a85] font-bold">✦</span>
+                  <span>Xây dựng đề cương nghiên cứu và bài thuyết trình cho các môn học chuyên ngành và dự án học thuật.</span>
+                </li>
+                <li class="flex items-start gap-2 md:flex-row-reverse md:text-right">
+                  <span class="text-[#ff2a85] font-bold">✦</span>
+                  <span>Ứng dụng các lý thuyết kinh tế và phương pháp định lượng vào giải quyết các vấn đề kinh tế thực tế.</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Center Glowing Node -->
+            <div class="absolute left-5 md:left-1/2 transform -translate-x-1/2 w-6 h-6 rounded-full bg-black border-2 border-[#ff2a85] flex items-center justify-center shadow-[0_0_15px_#ff2a85] z-10">
+              <span class="w-2 h-2 rounded-full bg-[#ff2a85]"></span>
+            </div>
+
+            <!-- Right Spacer -->
+            <div class="w-full md:w-1/2 md:pl-12 hidden md:block"></div>
+          </div>
+
+          <!-- 4. WORK EXPERIENCE: PRIVATE TUTOR -->
+          <div class="relative flex flex-col md:flex-row items-start md:items-center">
+            <!-- Left Spacer -->
+            <div class="w-full md:w-1/2 md:pr-12 hidden md:block"></div>
+
+            <!-- Center Glowing Node -->
+            <div class="absolute left-5 md:left-1/2 transform -translate-x-1/2 w-6 h-6 rounded-full bg-black border-2 border-[#ff2a85] flex items-center justify-center shadow-[0_0_15px_#ff2a85] z-10">
+              <span class="w-2 h-2 rounded-full bg-[#ff2a85]"></span>
+            </div>
+
+            <!-- Right Side Content -->
+            <div class="w-full md:w-1/2 md:pl-12 pl-12">
+              <span class="badge-pink !text-[11px] mb-2">2023 - HIỆN TẠI // KINH NGHIỆM</span>
+              <h3 class="text-2xl font-display font-black uppercase text-white">Private Tutor</h3>
+              <p class="text-sm text-[#ff2a85] font-bold mt-1">
+                Gia Sư Môn Toán (Mathematics Tutor)
+              </p>
+              <ul class="mt-3 text-xs text-gray-300 leading-relaxed space-y-2 list-none">
+                <li class="flex items-start gap-2">
+                  <span class="text-[#ff2a85] font-bold">✦</span>
+                  <span>Cung cấp dịch vụ gia sư toán học và hỗ trợ học thuật chuyên sâu cho học sinh cấp 2 và cấp 3.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-[#ff2a85] font-bold">✦</span>
+                  <span>Xây dựng kế hoạch học tập cá nhân hóa dựa trên học lực và mục tiêu học tập cụ thể của từng học sinh.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-[#ff2a85] font-bold">✦</span>
+                  <span>Giao tiếp hiệu quả và định kỳ trao đổi với học sinh và phụ huynh để theo dõi tiến độ và đưa ra phản hồi.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-[#ff2a85] font-bold">✦</span>
+                  <span>Củng cố kỹ năng giải quyết vấn đề, kỹ năng giao tiếp và quản lý thời gian thông qua quá trình giảng dạy.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       PROJECTS / PORTFOLIO: GRID LAYOUT & CARD HOVER GLOW
+       =================================================================== -->
+  <section id="projects" class="py-24 px-6 sm:px-12 relative z-10 bg-[#090909]/80 border-t border-b border-white/5">
+    <div class="max-w-7xl mx-auto">
+      
+      <!-- Section Header & Filter Tabs -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-16">
+        <div>
+          <div class="flex items-center gap-3">
+            <span class="text-xs font-display font-bold text-[#ff2a85] tracking-widest uppercase">03 // DỰ ÁN & HỒ SƠ NĂNG LỰC</span>
+            <div class="h-[1px] w-24 bg-[#ff2a85]/40"></div>
+          </div>
+          <h2 class="text-4xl sm:text-6xl font-display font-black uppercase tracking-tight text-white mt-2">
+            PROJECTS & <span class="text-stroke-pink">PORTFOLIO</span>
+          </h2>
+        </div>
+
+        <!-- Filter Pill Tabs -->
+        <div class="flex flex-wrap items-center gap-2 p-1.5 bg-[#141414] border border-white/10 rounded-lg">
+          <button class="filter-btn active text-xs font-display font-bold uppercase tracking-wider px-4 py-2 rounded text-gray-300 hover:text-white" data-filter="all">
+            Tất Cả
+          </button>
+          <button class="filter-btn text-xs font-display font-bold uppercase tracking-wider px-4 py-2 rounded text-gray-300 hover:text-white" data-filter="external-relations">
+            Đối Ngoại & PR
+          </button>
+          <button class="filter-btn text-xs font-display font-bold uppercase tracking-wider px-4 py-2 rounded text-gray-300 hover:text-white" data-filter="economics">
+            Nghiên Cứu Kinh Tế
+          </button>
+          <button class="filter-btn text-xs font-display font-bold uppercase tracking-wider px-4 py-2 rounded text-gray-300 hover:text-white" data-filter="mentorship">
+            Gia Sư & Giáo Dục
+          </button>
+        </div>
+      </div>
+
+      <!-- Projects Grid (Based on CV) -->
+      <div id="projects-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Project 1: FBIS Sponsorship Drive -->
+        <div class="portfolio-card glass-panel rounded-2xl overflow-hidden border border-white/10 flex flex-col justify-between" data-category="external-relations">
+          <div>
+            <div class="relative h-48 bg-gradient-to-tr from-[#1b0a14] via-[#24101d] to-[#0d0d0d] overflow-hidden flex items-center justify-center p-6 border-b border-white/10">
+              <div class="absolute inset-0 opacity-30 bg-[radial-gradient(#ff2a85_1px,transparent_1px)] [background-size:16px_16px]"></div>
+              <div class="card-img-zoom text-center relative z-10">
+                <span class="font-display text-3xl font-black text-[#ff2a85] tracking-widest">FBIS FTU</span>
+                <p class="text-[10px] font-bold text-gray-300 tracking-[0.2em] uppercase mt-1">SPONSORSHIP & PARTNERSHIP DRIVE</p>
+              </div>
+              <span class="absolute top-4 right-4 badge-pink !text-[10px]">
+                2024 - 2025
+              </span>
+            </div>
+
+            <div class="p-6">
+              <span class="text-[11px] font-bold text-[#ff2a85] uppercase tracking-wider">
+                Quan Hệ Đối Ngoại • Xúc Tiến Tài Trợ
+              </span>
+              <h3 class="text-xl font-display font-bold text-white uppercase mt-2 mb-3">
+                Xúc Tiến Tài Trợ Doanh Nghiệp FBIS FTU
+              </h3>
+              <p class="text-gray-400 text-xs leading-relaxed font-body mb-4">
+                Hỗ trợ các hoạt động đối ngoại, tiếp cận và kết nối nhà tài trợ, xây dựng mối quan hệ đối tác và trực tiếp soạn thảo hồ sơ mời tài trợ chuyên nghiệp.
+              </p>
+              
+              <div class="space-y-1.5 border-t border-white/10 pt-4 mb-4">
+                <div class="flex items-center gap-2 text-xs text-gray-300">
+                  <span class="text-[#ff2a85]">✦</span> Tiếp cận & kết nối đối tác doanh nghiệp
+                </div>
+                <div class="flex items-center gap-2 text-xs text-gray-300">
+                  <span class="text-[#ff2a85]">✦</span> Soạn thảo sponsorship proposals & thư mời
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-6 pt-0">
+            <button data-modal-target="fbis" class="w-full py-2.5 px-4 rounded border border-[#ff2a85]/40 bg-[#ff2a85]/10 hover:bg-[#ff2a85] text-white hover:text-black font-display font-bold text-xs uppercase tracking-wider transition-all duration-300 flex items-center justify-center gap-2">
+              <span>XEM CHI TIẾT CASE STUDY</span>
+              <span>↗</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Project 2: Academic Research Projects -->
+        <div class="portfolio-card glass-panel rounded-2xl overflow-hidden border border-white/10 flex flex-col justify-between" data-category="economics">
+          <div>
+            <div class="relative h-48 bg-gradient-to-tr from-[#0a121b] via-[#101c24] to-[#0d0d0d] overflow-hidden flex items-center justify-center p-6 border-b border-white/10">
+              <div class="absolute inset-0 opacity-30 bg-[radial-gradient(#ff2a85_1px,transparent_1px)] [background-size:16px_16px]"></div>
+              <div class="card-img-zoom text-center relative z-10">
+                <span class="font-display text-3xl font-black text-white tracking-widest">RESEARCH</span>
+                <p class="text-[10px] font-bold text-[#ff2a85] tracking-[0.2em] uppercase mt-1">KINH TẾ QUỐC TẾ & THƯƠNG MẠI</p>
+              </div>
+              <span class="absolute top-4 right-4 badge-pink !text-[10px]">
+                2024 - 2025
+              </span>
+            </div>
+
+            <div class="p-6">
+              <span class="text-[11px] font-bold text-[#ff2a85] uppercase tracking-wider">
+                Nghiên Cứu Học Thuật • Phân Tích Dữ Liệu
+              </span>
+              <h3 class="text-xl font-display font-bold text-white uppercase mt-2 mb-3">
+                Dự Án Nghiên Cứu Kinh Tế & Thương Mại
+              </h3>
+              <p class="text-gray-400 text-xs leading-relaxed font-body mb-4">
+                Thu thập và phân tích dữ liệu kinh tế, rà soát tài liệu học thuật quốc tế và ứng dụng các phương pháp định lượng hiện đại vào vấn đề kinh tế thực tiễn.
+              </p>
+              
+              <div class="space-y-1.5 border-t border-white/10 pt-4 mb-4">
+                <div class="flex items-center gap-2 text-xs text-gray-300">
+                  <span class="text-[#ff2a85]">✦</span> Thu thập & xử lý tập dữ liệu kinh tế
+                </div>
+                <div class="flex items-center gap-2 text-xs text-gray-300">
+                  <span class="text-[#ff2a85]">✦</span> Đề cương nghiên cứu & slide thuyết trình
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-6 pt-0">
+            <button data-modal-target="research" class="w-full py-2.5 px-4 rounded border border-[#ff2a85]/40 bg-[#ff2a85]/10 hover:bg-[#ff2a85] text-white hover:text-black font-display font-bold text-xs uppercase tracking-wider transition-all duration-300 flex items-center justify-center gap-2">
+              <span>XEM CHI TIẾT CASE STUDY</span>
+              <span>↗</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Project 3: Circular Economy Framework -->
+        <div class="portfolio-card glass-panel rounded-2xl overflow-hidden border border-white/10 flex flex-col justify-between" data-category="economics">
+          <div>
+            <div class="relative h-48 bg-gradient-to-tr from-[#14120a] via-[#1c180e] to-[#0d0d0d] overflow-hidden flex items-center justify-center p-6 border-b border-white/10">
+              <div class="absolute inset-0 opacity-30 bg-[radial-gradient(#ff2a85_1px,transparent_1px)] [background-size:16px_16px]"></div>
+              <div class="card-img-zoom text-center relative z-10">
+                <span class="font-display text-3xl font-black text-[#ff2a85] tracking-widest">CIRCULAR</span>
+                <p class="text-[10px] font-bold text-gray-300 tracking-[0.2em] uppercase mt-1">KINH TẾ TUẦN HOÀN & BỀN VỮNG</p>
+              </div>
+              <span class="absolute top-4 right-4 badge-pink !text-[10px]">
+                2024 - 2025
+              </span>
+            </div>
+
+            <div class="p-6">
+              <span class="text-[11px] font-bold text-[#ff2a85] uppercase tracking-wider">
+                Kinh Tế Tuần Hoàn • Chính Sách Bền Vững
+              </span>
+              <h3 class="text-xl font-display font-bold text-white uppercase mt-2 mb-3">
+                Mô Hình Kinh Tế Tuần Hoàn & Phát Triển
+              </h3>
+              <p class="text-gray-400 text-xs leading-relaxed font-body mb-4">
+                Nghiên cứu về chuyển đổi chuỗi giá trị và các giải pháp bền vững trong kinh tế xuất khẩu dựa trên chương trình học chuyên sâu tại FTU.
+              </p>
+              
+              <div class="space-y-1.5 border-t border-white/10 pt-4 mb-4">
+                <div class="flex items-center gap-2 text-xs text-gray-300">
+                  <span class="text-[#ff2a85]">✦</span> Phân tích tính khả thi & chi phí chuyển đổi
+                </div>
+                <div class="flex items-center gap-2 text-xs text-gray-300">
+                  <span class="text-[#ff2a85]">✦</span> Báo cáo chính sách phát triển bền vững
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-6 pt-0">
+            <button data-modal-target="circular" class="w-full py-2.5 px-4 rounded border border-[#ff2a85]/40 bg-[#ff2a85]/10 hover:bg-[#ff2a85] text-white hover:text-black font-display font-bold text-xs uppercase tracking-wider transition-all duration-300 flex items-center justify-center gap-2">
+              <span>XEM CHI TIẾT CASE STUDY</span>
+              <span>↗</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Project 4: Business Gala & Recruitment Series -->
+        <div class="portfolio-card glass-panel rounded-2xl overflow-hidden border border-white/10 flex flex-col justify-between" data-category="external-relations">
+          <div>
+            <div class="relative h-48 bg-gradient-to-tr from-[#1b0a14] via-[#2a0e20] to-[#0d0d0d] overflow-hidden flex items-center justify-center p-6 border-b border-white/10">
+              <div class="absolute inset-0 opacity-30 bg-[radial-gradient(#ff2a85_1px,transparent_1px)] [background-size:16px_16px]"></div>
+              <div class="card-img-zoom text-center relative z-10">
+                <span class="font-display text-3xl font-black text-white tracking-widest">FBIS GALA</span>
+                <p class="text-[10px] font-bold text-[#ff2a85] tracking-[0.2em] uppercase mt-1">CHIẾN DỊCH TUYỂN DỤNG & SỰ KIỆN</p>
+              </div>
+              <span class="absolute top-4 right-4 badge-pink !text-[10px]">
+                2024 - 2025
+              </span>
+            </div>
+
+            <div class="p-6">
+              <span class="text-[11px] font-bold text-[#ff2a85] uppercase tracking-wider">
+                Tổ Chức Sự Kiện • Điều Phối Liên Ban
+              </span>
+              <h3 class="text-xl font-display font-bold text-white uppercase mt-2 mb-3">
+                Chiến Dịch Tuyển Dụng & Chuỗi Workshop FBIS
+              </h3>
+              <p class="text-gray-400 text-xs leading-relaxed font-body mb-4">
+                Phối hợp với các ban chuyên môn tổ chức chiến dịch tuyển thành viên câu lạc bộ, chuỗi hội thảo chuyên đề và điều phối khách mời đối tác.
+              </p>
+              
+              <div class="space-y-1.5 border-t border-white/10 pt-4 mb-4">
+                <div class="flex items-center gap-2 text-xs text-gray-300">
+                  <span class="text-[#ff2a85]">✦</span> Tiếp cận 500+ sinh viên FTU tham gia
+                </div>
+                <div class="flex items-center gap-2 text-xs text-gray-300">
+                  <span class="text-[#ff2a85]">✦</span> Lễ tân đối tác, diễn giả và khách mời VIP
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-6 pt-0">
+            <button data-modal-target="gala" class="w-full py-2.5 px-4 rounded border border-[#ff2a85]/40 bg-[#ff2a85]/10 hover:bg-[#ff2a85] text-white hover:text-black font-display font-bold text-xs uppercase tracking-wider transition-all duration-300 flex items-center justify-center gap-2">
+              <span>XEM CHI TIẾT CASE STUDY</span>
+              <span>↗</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Project 5: Private Math Tutoring -->
+        <div class="portfolio-card glass-panel rounded-2xl overflow-hidden border border-white/10 flex flex-col justify-between" data-category="mentorship">
+          <div>
+            <div class="relative h-48 bg-gradient-to-tr from-[#0e161a] via-[#122129] to-[#0d0d0d] overflow-hidden flex items-center justify-center p-6 border-b border-white/10">
+              <div class="absolute inset-0 opacity-30 bg-[radial-gradient(#ff2a85_1px,transparent_1px)] [background-size:16px_16px]"></div>
+              <div class="card-img-zoom text-center relative z-10">
+                <span class="font-display text-3xl font-black text-[#ff2a85] tracking-widest">MATH TUTOR</span>
+                <p class="text-[10px] font-bold text-gray-300 tracking-[0.2em] uppercase mt-1">GIẢNG DẠY & KÈM CẶP TOÁN HỌC</p>
+              </div>
+              <span class="absolute top-4 right-4 badge-pink !text-[10px]">
+                2023 - NAY
+              </span>
+            </div>
+
+            <div class="p-6">
+              <span class="text-[11px] font-bold text-[#ff2a85] uppercase tracking-wider">
+                Gia Sư Môn Toán • Phương Pháp Sư Phạm
+              </span>
+              <h3 class="text-xl font-display font-bold text-white uppercase mt-2 mb-3">
+                Kế Hoạch Học Tập & Gia Sư Môn Toán
+              </h3>
+              <p class="text-gray-400 text-xs leading-relaxed font-body mb-4">
+                Thiết kế lộ trình học toán cá nhân hóa cho học sinh cấp 2 & 3, liên tục theo dõi và phản hồi kết quả để tối ưu điểm số và tư duy giải quyết vấn đề.
+              </p>
+              
+              <div class="space-y-1.5 border-t border-white/10 pt-4 mb-4">
+                <div class="flex items-center gap-2 text-xs text-gray-300">
+                  <span class="text-[#ff2a85]">✦</span> Giáo án cá nhân hóa theo năng lực
+                </div>
+                <div class="flex items-center gap-2 text-xs text-gray-300">
+                  <span class="text-[#ff2a85]">✦</span> Báo cáo định kỳ & đồng hành cùng phụ huynh
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-6 pt-0">
+            <button data-modal-target="tutoring" class="w-full py-2.5 px-4 rounded border border-[#ff2a85]/40 bg-[#ff2a85]/10 hover:bg-[#ff2a85] text-white hover:text-black font-display font-bold text-xs uppercase tracking-wider transition-all duration-300 flex items-center justify-center gap-2">
+              <span>XEM CHI TIẾT CASE STUDY</span>
+              <span>↗</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Project 6: International Investment & Trade -->
+        <div class="portfolio-card glass-panel rounded-2xl overflow-hidden border border-white/10 flex flex-col justify-between" data-category="economics">
+          <div>
+            <div class="relative h-48 bg-gradient-to-tr from-[#1b0e12] via-[#261019] to-[#0d0d0d] overflow-hidden flex items-center justify-center p-6 border-b border-white/10">
+              <div class="absolute inset-0 opacity-30 bg-[radial-gradient(#ff2a85_1px,transparent_1px)] [background-size:16px_16px]"></div>
+              <div class="card-img-zoom text-center relative z-10">
+                <span class="font-display text-3xl font-black text-white tracking-widest">FDI & TRADE</span>
+                <p class="text-[10px] font-bold text-[#ff2a85] tracking-[0.2em] uppercase mt-1">ĐẦU TƯ QUỐC TẾ & THƯƠNG MẠI</p>
+              </div>
+              <span class="absolute top-4 right-4 badge-pink !text-[10px]">
+                2024 - NAY
+              </span>
+            </div>
+
+            <div class="p-6">
+              <span class="text-[11px] font-bold text-[#ff2a85] uppercase tracking-wider">
+                Đầu Tư Quốc Tế • Chiến Lược Vĩ Mô
+              </span>
+              <h3 class="text-xl font-display font-bold text-white uppercase mt-2 mb-3">
+                Phân Tích Dòng Vốn Đầu Tư Trực Tiếp (FDI)
+              </h3>
+              <p class="text-gray-400 text-xs leading-relaxed font-body mb-4">
+                Nghiên cứu các dòng vốn đầu tư trực tiếp nước ngoài vào Việt Nam trong bối cảnh các hiệp định thương mại tự do và biến động kinh tế toàn cầu.
+              </p>
+              
+              <div class="space-y-1.5 border-t border-white/10 pt-4 mb-4">
+                <div class="flex items-center gap-2 text-xs text-gray-300">
+                  <span class="text-[#ff2a85]">✦</span> Đánh giá chính sách ưu đãi đầu tư
+                </div>
+                <div class="flex items-center gap-2 text-xs text-gray-300">
+                  <span class="text-[#ff2a85]">✦</span> Nhận diện cơ hội & rủi ro thị trường
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-6 pt-0">
+            <button data-modal-target="fdi" class="w-full py-2.5 px-4 rounded border border-[#ff2a85]/40 bg-[#ff2a85]/10 hover:bg-[#ff2a85] text-white hover:text-black font-display font-bold text-xs uppercase tracking-wider transition-all duration-300 flex items-center justify-center gap-2">
+              <span>XEM CHI TIẾT CASE STUDY</span>
+              <span>↗</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       SKILLS & LANGUAGES SECTION: TAGS & PROGRESS METERS FROM CV
+       =================================================================== -->
+  <section id="skills" class="py-24 px-6 sm:px-12 relative z-10">
+    <div class="max-w-7xl mx-auto">
+      
+      <!-- Section Header -->
+      <div class="flex flex-col mb-16">
+        <div class="flex items-center gap-3">
+          <span class="text-xs font-display font-bold text-[#ff2a85] tracking-widest uppercase">04 // NĂNG LỰC & CHUYÊN MÔN</span>
+          <div class="h-[1px] w-24 bg-[#ff2a85]/40"></div>
+        </div>
+        <h2 class="text-4xl sm:text-6xl font-display font-black uppercase tracking-tight text-white mt-2">
+          KỸ NĂNG & <span class="text-stroke-pink">NGÔN NGỮ</span>
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+        
+        <!-- Left Column: Core Skills from CV as Tag Badges & Competency Matrix -->
+        <div class="lg:col-span-7 flex flex-col gap-6">
+          <div class="glass-panel p-8 rounded-2xl border border-white/10">
+            <h3 class="text-lg font-display font-bold uppercase text-white mb-6 flex items-center gap-3">
+              <span class="w-3 h-3 bg-[#ff2a85] rounded-full shadow-[0_0_10px_#ff2a85]"></span>
+              HỆ THỐNG KỸ NĂNG CHUYÊN MÔN (TỪ CV)
+            </h3>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              
+              <!-- Skill Item 1 -->
+              <div class="p-4 rounded-xl bg-[#141414] border border-white/10 hover:border-[#ff2a85]/50 transition-all">
+                <div class="flex justify-between items-center mb-1">
+                  <h4 class="font-display font-bold text-white text-sm">Project Management</h4>
+                  <span class="text-[#ff2a85] text-xs font-bold">Chuyên sâu</span>
+                </div>
+                <p class="text-xs text-gray-400">Quản lý dự án, lập kế hoạch tiến độ, phân bổ nguồn lực và điều phối hoạt động.</p>
+              </div>
+
+              <!-- Skill Item 2 -->
+              <div class="p-4 rounded-xl bg-[#141414] border border-white/10 hover:border-[#ff2a85]/50 transition-all">
+                <div class="flex justify-between items-center mb-1">
+                  <h4 class="font-display font-bold text-white text-sm">Public Relations</h4>
+                  <span class="text-[#ff2a85] text-xs font-bold">Thực chiến</span>
+                </div>
+                <p class="text-xs text-gray-400">Quan hệ công chúng, tiếp cận đối tác chiến lược, truyền thông và ký kết tài trợ.</p>
+              </div>
+
+              <!-- Skill Item 3 -->
+              <div class="p-4 rounded-xl bg-[#141414] border border-white/10 hover:border-[#ff2a85]/50 transition-all">
+                <div class="flex justify-between items-center mb-1">
+                  <h4 class="font-display font-bold text-white text-sm">Leadership</h4>
+                  <span class="text-[#ff2a85] text-xs font-bold">Phó Ban</span>
+                </div>
+                <p class="text-xs text-gray-400">Kỹ năng lãnh đạo, dẫn dắt đội ngũ, tạo động lực và đại diện tổ chức.</p>
+              </div>
+
+              <!-- Skill Item 4 -->
+              <div class="p-4 rounded-xl bg-[#141414] border border-white/10 hover:border-[#ff2a85]/50 transition-all">
+                <div class="flex justify-between items-center mb-1">
+                  <h4 class="font-display font-bold text-white text-sm">Effective Communication</h4>
+                  <span class="text-[#ff2a85] text-xs font-bold">Thuyết phục</span>
+                </div>
+                <p class="text-xs text-gray-400">Giao tiếp hiệu quả, đàm phán hợp đồng tài trợ và thuyết trình trước đám đông.</p>
+              </div>
+
+              <!-- Skill Item 5 -->
+              <div class="p-4 rounded-xl bg-[#141414] border border-white/10 hover:border-[#ff2a85]/50 transition-all">
+                <div class="flex justify-between items-center mb-1">
+                  <h4 class="font-display font-bold text-white text-sm">Critical Thinking</h4>
+                  <span class="text-[#ff2a85] text-xs font-bold">Sắc bén</span>
+                </div>
+                <p class="text-xs text-gray-400">Tư duy phản biện, đánh giá đa chiều dữ liệu kinh tế và giải quyết bài toán phức tạp.</p>
+              </div>
+
+              <!-- Skill Item 6 -->
+              <div class="p-4 rounded-xl bg-[#141414] border border-white/10 hover:border-[#ff2a85]/50 transition-all">
+                <div class="flex justify-between items-center mb-1">
+                  <h4 class="font-display font-bold text-white text-sm">International Economics</h4>
+                  <span class="text-[#ff2a85] text-xs font-bold">GPA 3.8</span>
+                </div>
+                <p class="text-xs text-gray-400">Kinh tế quốc tế, kinh tế vĩ mô, đầu tư quốc tế và phân tích thương mại.</p>
+              </div>
+
+              <!-- Skill Item 7 -->
+              <div class="p-4 rounded-xl bg-[#141414] border border-white/10 hover:border-[#ff2a85]/50 transition-all">
+                <div class="flex justify-between items-center mb-1">
+                  <h4 class="font-display font-bold text-white text-sm">Teamwork</h4>
+                  <span class="text-[#ff2a85] text-xs font-bold">Hợp tác</span>
+                </div>
+                <p class="text-xs text-gray-400">Làm việc nhóm đa nhiệm, phối hợp nhịp nhàng giữa các ban bộ phận.</p>
+              </div>
+
+              <!-- Skill Item 8 -->
+              <div class="p-4 rounded-xl bg-[#141414] border border-white/10 hover:border-[#ff2a85]/50 transition-all">
+                <div class="flex justify-between items-center mb-1">
+                  <h4 class="font-display font-bold text-white text-sm">Time Management</h4>
+                  <span class="text-[#ff2a85] text-xs font-bold">Kỷ luật</span>
+                </div>
+                <p class="text-xs text-gray-400">Quản lý thời gian kỷ luật giữa việc học FTU, công tác đối ngoại và giảng dạy.</p>
+              </div>
+
+            </div>
+
+            <!-- Tag cloud cluster -->
+            <div class="mt-6 pt-6 border-t border-white/10 flex flex-wrap gap-2">
+              <span class="badge-pink !text-xs">#ProjectManagement</span>
+              <span class="badge-pink !text-xs">#PublicRelations</span>
+              <span class="badge-pink !text-xs">#Leadership</span>
+              <span class="badge-pink !text-xs">#EffectiveCommunication</span>
+              <span class="badge-pink !text-xs">#CriticalThinking</span>
+              <span class="badge-pink !text-xs">#InternationalEconomics</span>
+              <span class="badge-pink !text-xs">#Teamwork</span>
+              <span class="badge-pink !text-xs">#TimeManagement</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Languages Visual Meters (From CV) -->
+        <div class="lg:col-span-5 flex flex-col gap-6">
+          <div class="glass-panel-neon p-8 rounded-2xl">
+            <h3 class="text-lg font-display font-bold uppercase text-white mb-6 flex items-center gap-3">
+              <span class="w-3 h-3 bg-[#ff2a85] rounded-full shadow-[0_0_10px_#ff2a85]"></span>
+              NGÔN NGỮ (LANGUAGES FROM CV)
+            </h3>
+
+            <div class="space-y-6">
+              
+              <!-- Vietnamese -->
+              <div>
+                <div class="flex justify-between text-xs font-display font-bold mb-2">
+                  <span class="text-white text-sm">Vietnamese (Tiếng Việt)</span>
+                  <span class="text-[#ff2a85]">Fluent (Bản ngữ / Thành thạo)</span>
+                </div>
+                <div class="w-full bg-[#141414] h-2.5 rounded-full overflow-hidden border border-white/10 p-0.5">
+                  <div class="bg-gradient-to-r from-[#ff2a85] to-[#ff1493] h-full rounded-full w-full shadow-[0_0_10px_#ff2a85]"></div>
+                </div>
+              </div>
+
+              <!-- English -->
+              <div>
+                <div class="flex justify-between text-xs font-display font-bold mb-2">
+                  <span class="text-white text-sm">English (Tiếng Anh)</span>
+                  <span class="text-[#ff2a85]">Fluent (Thành thạo học thuật & giao tiếp)</span>
+                </div>
+                <div class="w-full bg-[#141414] h-2.5 rounded-full overflow-hidden border border-white/10 p-0.5">
+                  <div class="bg-gradient-to-r from-[#ff2a85] to-[#ff1493] h-full rounded-full w-[95%] shadow-[0_0_10px_#ff2a85]"></div>
+                </div>
+              </div>
+
+              <!-- French -->
+              <div>
+                <div class="flex justify-between text-xs font-display font-bold mb-2">
+                  <span class="text-white text-sm">French (Tiếng Pháp)</span>
+                  <span class="text-gray-300">Intermediate (Trung cấp)</span>
+                </div>
+                <div class="w-full bg-[#141414] h-2.5 rounded-full overflow-hidden border border-white/10 p-0.5">
+                  <div class="bg-[#ff2a85]/70 h-full rounded-full w-[65%]"></div>
+                </div>
+              </div>
+
+              <!-- Chinese -->
+              <div>
+                <div class="flex justify-between text-xs font-display font-bold mb-2">
+                  <span class="text-white text-sm">Chinese (Tiếng Trung)</span>
+                  <span class="text-gray-300">Basic (Cơ bản)</span>
+                </div>
+                <div class="w-full bg-[#141414] h-2.5 rounded-full overflow-hidden border border-white/10 p-0.5">
+                  <div class="bg-[#ff2a85]/50 h-full rounded-full w-[40%]"></div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Reference Section from CV -->
+            <div class="mt-8 pt-6 border-t border-white/10">
+              <span class="text-[10px] font-bold text-[#ff2a85] uppercase tracking-widest block mb-2">
+                NGƯỜI THAM CHIẾU (REFERENCE FROM CV)
+              </span>
+              <div class="bg-[#141414] p-4 rounded-xl border border-white/10">
+                <h4 class="font-display font-bold text-white text-sm">Nguyễn Phương Nga</h4>
+                <p class="text-xs text-gray-400 mt-0.5">Hà Nội, Việt Nam</p>
+                <div class="mt-2 text-xs flex flex-col gap-1">
+                  <div class="flex items-center gap-2">
+                    <span class="text-gray-400">Phone:</span>
+                    <span class="text-[#ff2a85] font-mono font-bold">+84 - 97 353 322</span>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <span class="text-gray-400">Email:</span>
+                    <span class="text-gray-200 font-mono">phuongnga@gmail.com</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       CONTACT & CV DOWNLOAD SECTION: BOLD CALL TO ACTION
+       =================================================================== -->
+  <section id="contact" class="py-24 px-6 sm:px-12 relative z-10 border-t border-white/10 bg-[#080808]">
+    <div class="max-w-7xl mx-auto">
+      
+      <!-- Section Header -->
+      <div class="flex flex-col items-center text-center mb-16">
+        <span class="badge-pink mb-3">KẾT NỐI HỢP TÁC // COLLABORATION</span>
+        <h2 class="text-5xl sm:text-7xl xl:text-8xl font-display font-black uppercase tracking-tight text-white">
+          HỢP TÁC <span class="text-stroke-pink hover:text-[#ff2a85] transition-colors">CÙNG TÔI</span>
+        </h2>
+        <p class="text-gray-400 text-sm sm:text-base font-body max-w-xl mt-4">
+          Sẵn sàng kết nối cho các cơ hội tài trợ đối ngoại, dự án nghiên cứu kinh tế học thuật, hợp tác giảng dạy và các cơ hội nghề nghiệp đột phá.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+        
+        <!-- Left Column: Direct Contact & Action Pill Buttons -->
+        <div class="lg:col-span-5 flex flex-col gap-6">
+          
+          <!-- Direct Email Card -->
+          <div class="glass-panel p-6 rounded-xl border border-white/10 flex items-center justify-between group hover:border-[#ff2a85]/50 transition-all">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 rounded bg-[#ff2a85]/10 border border-[#ff2a85]/40 flex items-center justify-center text-[#ff2a85]">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                </svg>
+              </div>
+              <div>
+                <span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest block">EMAIL TRỰC TIẾP</span>
+                <span class="text-sm font-semibold text-white group-hover:text-[#ff2a85] transition-colors font-mono">nghiemtruonghuy200608@gmail.com</span>
+              </div>
+            </div>
+            <button data-copy-value="nghiemtruonghuy200608@gmail.com" data-copy-label="Email" title="Sao chép Email" class="p-2 text-gray-400 hover:text-white transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/>
+              </svg>
+            </button>
+          </div>
+
+          <!-- Direct Phone Card -->
+          <div class="glass-panel p-6 rounded-xl border border-white/10 flex items-center justify-between group hover:border-[#ff2a85]/50 transition-all">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 rounded bg-[#ff2a85]/10 border border-[#ff2a85]/40 flex items-center justify-center text-[#ff2a85]">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                </svg>
+              </div>
+              <div>
+                <span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest block">ĐIỆN THOẠI & ZALO</span>
+                <span class="text-sm font-semibold text-white group-hover:text-[#ff2a85] transition-colors font-mono">+84 - 38 542 8028</span>
+              </div>
+            </div>
+            <button data-copy-value="+84385428028" data-copy-label="Số Điện Thoại" title="Sao chép Số điện thoại" class="p-2 text-gray-400 hover:text-white transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/>
+              </svg>
+            </button>
+          </div>
+
+          <!-- Location Card -->
+          <div class="glass-panel p-6 rounded-xl border border-white/10 flex items-center gap-4">
+            <div class="w-12 h-12 rounded bg-white/5 border border-white/10 flex items-center justify-center text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+              </svg>
+            </div>
+            <div>
+              <span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest block">ĐỊA CHỈ THƯỜNG TRÚ</span>
+              <span class="text-sm font-semibold text-white">Hà Nội, Việt Nam</span>
+            </div>
+          </div>
+
+          <!-- CV Download Large Button -->
+          <div class="p-6 rounded-xl bg-gradient-to-r from-[#181818] to-[#121212] border border-[#ff2a85]/50 flex flex-col gap-3">
+            <span class="text-xs font-display font-bold text-[#ff2a85] uppercase tracking-wider">HỒ SƠ ỨNG TUYỂN CHÍNH THỨC</span>
+            <p class="text-xs text-gray-300">Xem và lưu trữ hồ sơ CV hoàn chỉnh (Curriculum Vitae) dạng file PDF chuẩn hóa.</p>
+            <button data-open-cv class="btn-neon-pink w-full py-3 text-xs tracking-wider">
+              TẢI & XEM CV (PDF ĐẦY ĐỦ)
+            </button>
+          </div>
+
+          <!-- Social Links Pill Cluster -->
+          <div class="pt-2">
+            <span class="text-xs font-display font-bold text-gray-400 uppercase tracking-widest block mb-3">
+              MẠNG XÃ HỘI & MẠNG CHUYÊN MÔN
+            </span>
+            <div class="flex flex-wrap gap-2.5">
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="badge-pink !text-xs !py-2 !px-4 hover:bg-[#ff2a85] hover:text-black transition-all">
+                LinkedIn ↗
+              </a>
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="badge-pink !text-xs !py-2 !px-4 hover:bg-[#ff2a85] hover:text-black transition-all">
+                Facebook ↗
+              </a>
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="badge-pink !text-xs !py-2 !px-4 hover:bg-[#ff2a85] hover:text-black transition-all">
+                Instagram ↗
+              </a>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="badge-pink !text-xs !py-2 !px-4 hover:bg-[#ff2a85] hover:text-black transition-all">
+                GitHub ↗
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Column: Minimal Luxury Contact Form -->
+        <div class="lg:col-span-7">
+          <form id="portfolio-contact-form" class="glass-panel-neon p-8 sm:p-10 rounded-2xl flex flex-col gap-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              
+              <!-- Name Input -->
+              <div class="flex flex-col gap-2">
+                <label for="contact-name" class="text-xs font-display font-bold text-gray-300 uppercase tracking-wider">
+                  Họ và Tên của bạn <span class="text-[#ff2a85]">*</span>
+                </label>
+                <input 
+                  type="text" 
+                  id="contact-name" 
+                  required
+                  placeholder="Ví dụ: Nguyễn Văn A" 
+                  class="w-full bg-[#121212] border border-white/10 rounded-lg px-4 py-3.5 text-sm text-white focus:outline-none focus:border-[#ff2a85] focus:ring-1 focus:ring-[#ff2a85] transition-all font-body"
+                >
+              </div>
+
+              <!-- Email Input -->
+              <div class="flex flex-col gap-2">
+                <label for="contact-email" class="text-xs font-display font-bold text-gray-300 uppercase tracking-wider">
+                  Địa chỉ Email <span class="text-[#ff2a85]">*</span>
+                </label>
+                <input 
+                  type="email" 
+                  id="contact-email" 
+                  required
+                  placeholder="name@company.com" 
+                  class="w-full bg-[#121212] border border-white/10 rounded-lg px-4 py-3.5 text-sm text-white focus:outline-none focus:border-[#ff2a85] focus:ring-1 focus:ring-[#ff2a85] transition-all font-body"
+                >
+              </div>
+
+            </div>
+
+            <!-- Subject / Project Scope -->
+            <div class="flex flex-col gap-2">
+              <label for="contact-subject" class="text-xs font-display font-bold text-gray-300 uppercase tracking-wider">
+                Mục đích liên hệ & Hợp tác
+              </label>
+              <select 
+                id="contact-subject" 
+                class="w-full bg-[#121212] border border-white/10 rounded-lg px-4 py-3.5 text-sm text-white focus:outline-none focus:border-[#ff2a85] focus:ring-1 focus:ring-[#ff2a85] transition-all font-body"
+              >
+                <option value="sponsorship">Tài trợ Doanh nghiệp & Quan hệ Đối ngoại (FBIS FTU)</option>
+                <option value="research">Hợp tác Dự án Nghiên cứu Kinh tế Học thuật</option>
+                <option value="tutoring">Đăng ký Học & Gia sư Toán Chuyên sâu</option>
+                <option value="career">Cơ hội Tuyển dụng & Nghề nghiệp</option>
+                <option value="other">Giao lưu Mạng lưới & Trao đổi Khác</option>
+              </select>
+            </div>
+
+            <!-- Message Area -->
+            <div class="flex flex-col gap-2">
+              <label for="contact-message" class="text-xs font-display font-bold text-gray-300 uppercase tracking-wider">
+                Nội dung tin nhắn <span class="text-[#ff2a85]">*</span>
+              </label>
+              <textarea 
+                id="contact-message" 
+                rows="4" 
+                required
+                placeholder="Chia sẻ ý tưởng, đề xuất tài trợ, dự án hoặc yêu cầu hợp tác của bạn..." 
+                class="w-full bg-[#121212] border border-white/10 rounded-lg px-4 py-3.5 text-sm text-white focus:outline-none focus:border-[#ff2a85] focus:ring-1 focus:ring-[#ff2a85] transition-all font-body resize-none"
+              ></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn-neon-pink w-full py-4 text-sm font-display font-bold tracking-widest uppercase">
+              GỬI THÔNG ĐIỆP NGAY →
+            </button>
+
+            <p class="text-[11px] text-gray-500 text-center tracking-wider font-body">
+              ✦ Tin nhắn chuyển tiếp trực tiếp đến hộp thư nghiemtruonghuy200608@gmail.com
+            </p>
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       FOOTER
+       =================================================================== -->
+  <footer class="py-12 px-6 sm:px-12 border-t border-white/10 relative z-10 bg-[#060606]">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6">
+      
+      <div class="flex flex-col sm:flex-row items-center gap-4 text-center sm:text-left">
+        <span class="font-display font-black text-white text-base tracking-widest">
+          NGHIÊM TRƯỜNG HUY
+        </span>
+        <span class="hidden sm:inline text-gray-600">•</span>
+        <span class="text-xs text-gray-400">
+          KHOA KINH TẾ QUỐC TẾ — ĐẠI HỌC NGOẠI THƯƠNG (FTU) // BORN PINK EDITION
+        </span>
+      </div>
+
+      <div class="flex items-center gap-6">
+        <span class="text-xs font-mono text-[#ff2a85]">
+          © 2026 // ALL RIGHTS RESERVED
+        </span>
+        <a href="#hero" class="w-8 h-8 rounded border border-white/20 bg-[#141414] hover:border-[#ff2a85] text-gray-400 hover:text-[#ff2a85] flex items-center justify-center text-xs transition-all" title="Lên đầu trang">
+          ▲
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ===================================================================
+       PROJECT CASE STUDY MODAL DIALOG
+       =================================================================== -->
+  <div id="project-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 hidden opacity-0 transition-opacity duration-300">
+    <div class="modal-backdrop absolute inset-0"></div>
+
+    <div class="modal-content-box relative w-full max-w-2xl bg-[#121212] border border-[#ff2a85]/50 rounded-2xl p-6 sm:p-8 shadow-[0_0_50px_rgba(255,42,133,0.35)] z-10 max-h-[90vh] overflow-y-auto transform scale-95 transition-transform duration-300">
+      
+      <!-- Close Button -->
+      <button id="modal-close" class="absolute top-5 right-5 text-gray-400 hover:text-white p-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+        </svg>
+      </button>
+
+      <!-- Modal Badge & Timeline -->
+      <div class="flex items-center justify-between pr-8 mb-3">
+        <span id="modal-badge" class="badge-pink !text-[11px]">CASE STUDY</span>
+        <span id="modal-date" class="text-xs text-gray-400 font-mono">2024 - 2025</span>
+      </div>
+
+      <!-- Title & Subtitle -->
+      <h3 id="modal-title" class="text-2xl sm:text-3xl font-display font-black uppercase text-white tracking-tight mb-1">
+        Tiêu Đề Case Study
+      </h3>
+      <p id="modal-subtitle" class="text-xs text-[#ff2a85] font-bold uppercase tracking-wider mb-6">
+        Chi Tiết Vai Trò
+      </p>
+
+      <!-- Description -->
+      <div class="border-t border-white/10 pt-4 mb-6">
+        <h4 class="text-xs font-display font-bold text-gray-400 uppercase tracking-widest mb-2">TỔNG QUAN DỰ ÁN & VAI TRÒ</h4>
+        <p id="modal-desc" class="text-gray-300 text-sm leading-relaxed font-body">
+          Nội dung tổng quan.
+        </p>
+      </div>
+
+      <!-- Key Outcomes / Deliverables -->
+      <div class="border-t border-white/10 pt-4 mb-6">
+        <h4 class="text-xs font-display font-bold text-gray-400 uppercase tracking-widest mb-3">KẾT QUẢ VÀ ĐÓNG GÓP THEN CHỐT</h4>
+        <ul id="modal-deliverables" class="space-y-2">
+          <!-- Dynamic List items inserted by JS -->
+        </ul>
+      </div>
+
+      <!-- Core Skills Used -->
+      <div class="border-t border-white/10 pt-4">
+        <h4 class="text-xs font-display font-bold text-gray-400 uppercase tracking-widest mb-3">KỸ NĂNG VÀ NĂNG LỰC VẬN DỤNG</h4>
+        <div id="modal-tools" class="flex flex-wrap gap-2">
+          <!-- Dynamic Pills inserted by JS -->
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ===================================================================
+       FULL CV (CURRICULUM VITAE) VIEWER & PRINT MODAL
+       =================================================================== -->
+  <div id="cv-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 hidden opacity-0 transition-opacity duration-300">
+    <div class="modal-backdrop absolute inset-0"></div>
+
+    <div class="modal-content-box relative w-full max-w-3xl bg-[#141414] border border-[#ff2a85] rounded-2xl p-6 sm:p-10 shadow-[0_0_60px_rgba(255,42,133,0.4)] z-10 max-h-[92vh] overflow-y-auto transform scale-95 transition-transform duration-300">
+      
+      <!-- Top Action Bar -->
+      <div class="flex items-center justify-between border-b border-white/10 pb-4 mb-6">
+        <div class="flex items-center gap-3">
+          <span class="badge-pink !text-xs">CV BẢN CHUẨN // FTU 2026</span>
+          <span class="text-xs text-gray-400">Nghiêm Trường Huy</span>
+        </div>
+        <div class="flex items-center gap-3">
+          <button id="cv-print-btn" class="btn-neon-pink !py-1.5 !px-3.5 !text-xs flex items-center gap-1.5">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/>
+            </svg>
+            <span>IN / LƯU PDF</span>
+          </button>
+          <button id="cv-modal-close" class="text-gray-400 hover:text-white p-1">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Printable CV Content (Clean High-Fashion CV Replica) -->
+      <div class="bg-[#0b0b0b] p-6 sm:p-8 rounded-xl border border-white/10 text-white font-body space-y-6">
+        
+        <!-- CV Header with Official Photo -->
+        <div class="border-b border-[#ff2a85]/40 pb-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+          <div>
+            <h2 class="text-3xl sm:text-4xl font-display font-black uppercase text-white">NGHIÊM TRƯỜNG HUY</h2>
+            <p class="text-sm font-display font-bold text-[#ff2a85] uppercase tracking-wider mt-1">
+              SINH VIÊN KHOA KINH TẾ QUỐC TẾ — TRƯỜNG ĐẠI HỌC NGOẠI THƯƠNG
+            </p>
+            <div class="mt-3 flex flex-wrap gap-4 text-xs text-gray-300">
+              <span>📞 +84 - 38 542 8028</span>
+              <span>✉️ nghiemtruonghuy200608@gmail.com</span>
+              <span>📍 Hà Nội, Việt Nam</span>
+            </div>
+          </div>
+          <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-full overflow-hidden border-2 border-[#ff2a85] shadow-[0_0_15px_#ff2a85] flex-shrink-0">
+            <img src="assets/huy-portrait.jpg" alt="Nghiêm Trường Huy" class="w-full h-full object-cover">
+          </div>
+        </div>
+
+        <!-- Profile -->
+        <div>
+          <h3 class="text-xs font-display font-bold text-[#ff2a85] uppercase tracking-widest border-b border-white/10 pb-1 mb-2">
+            PROFILE
+          </h3>
+          <p class="text-xs text-gray-300 leading-relaxed">
+            International Economics student at Foreign Trade University with experience in tutoring, external relations, event organization, and academic research. Active in student organizations, particularly in partnership development, sponsorship outreach, and communication. Strong interest in business, international economics, and developing practical skills through extracurricular activities and research projects.
+          </p>
+        </div>
+
+        <!-- Work Experience -->
+        <div>
+          <h3 class="text-xs font-display font-bold text-[#ff2a85] uppercase tracking-widest border-b border-white/10 pb-1 mb-3">
+            WORK EXPERIENCE
+          </h3>
+          <div class="space-y-4 text-xs">
+            <div>
+              <div class="flex justify-between font-bold text-white">
+                <span>Private Tutor — Mathematics Tutor</span>
+                <span class="text-[#ff2a85]">2023 - PRESENT</span>
+              </div>
+              <ul class="list-disc pl-5 mt-1 text-gray-300 space-y-1">
+                <li>Provide mathematics tutoring and academic support for middle and high school students.</li>
+                <li>Develop personalized learning plans based on students' academic levels and learning objectives.</li>
+                <li>Communicate effectively with students and parents to monitor learning progress and provide feedback.</li>
+                <li>Strengthen problem-solving, communication, and time-management skills through teaching.</li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="flex justify-between font-bold text-white">
+                <span>FBIS FTU — Deputy Head of External Relations Committee</span>
+                <span class="text-[#ff2a85]">2024 - 2025</span>
+              </div>
+              <ul class="list-disc pl-5 mt-1 text-gray-300 space-y-1">
+                <li>Support external relations activities, including sponsor outreach, partnership communication, and event coordination.</li>
+                <li>Develop and maintain relationships with sponsors, partners, and external organizations.</li>
+                <li>Contribute to sponsorship proposals, invitation letters, communication materials, and partnership activities.</li>
+                <li>Collaborate with other departments to organize recruitment campaigns, workshops, and club events.</li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="flex justify-between font-bold text-white">
+                <span>Academic Research Projects — Research Team Member</span>
+                <span class="text-[#ff2a85]">2024 - 2025</span>
+              </div>
+              <ul class="list-disc pl-5 mt-1 text-gray-300 space-y-1">
+                <li>Conduct research on topics related to international economics, development economics, education, trade, and sustainability.</li>
+                <li>Collect and analyze economic data and review academic literature to support research projects.</li>
+                <li>Develop research proposals and presentations for university coursework and academic projects.</li>
+                <li>Apply economic theories and quantitative methods to real-world economic issues.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Education -->
+        <div>
+          <h3 class="text-xs font-display font-bold text-[#ff2a85] uppercase tracking-widest border-b border-white/10 pb-1 mb-2">
+            EDUCATION
+          </h3>
+          <div class="text-xs text-gray-300">
+            <div class="flex justify-between font-bold text-white">
+              <span>Foreign Trade University — Bachelor of International Economics</span>
+              <span class="text-[#ff2a85]">2024 - PRESENT</span>
+            </div>
+            <p class="mt-1 font-semibold text-white">GPA: 3.8 / 4.0</p>
+            <p class="mt-1 text-gray-400">
+              <strong class="text-gray-300">Relevant Coursework:</strong> International Economics, Macroeconomics, International Investment, Development Economics, Tourism Economics, Circular Economy, Research Methods in Economics and Business.
+            </p>
+          </div>
+        </div>
+
+        <!-- Skills & Languages & Reference -->
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2 text-xs">
+          <div>
+            <h4 class="font-display font-bold text-[#ff2a85] mb-2 uppercase">SKILLS</h4>
+            <ul class="space-y-1 text-gray-300">
+              <li>• Project Management</li>
+              <li>• Public Relations</li>
+              <li>• Teamwork</li>
+              <li>• Time Management</li>
+              <li>• Leadership</li>
+              <li>• Effective Communication</li>
+              <li>• Critical Thinking</li>
+              <li>• International Economics</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-display font-bold text-[#ff2a85] mb-2 uppercase">LANGUAGES</h4>
+            <ul class="space-y-1 text-gray-300">
+              <li>• Vietnamese (Fluent)</li>
+              <li>• English (Fluent)</li>
+              <li>• Chinese (Basic)</li>
+              <li>• French (Intermediate)</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-display font-bold text-[#ff2a85] mb-2 uppercase">REFERENCE</h4>
+            <p class="font-bold text-white">Nguyễn Phương Nga</p>
+            <p class="text-gray-400">Hà Nội, Việt Nam</p>
+            <p class="text-gray-300 mt-1">Phone: +84 - 97 353 322</p>
+            <p class="text-gray-300">Email: phuongnga@gmail.com</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div id="toast-container" class="toast-container"></div>
+
+  <!-- Main JavaScript File -->
+  <script src="js/main.js"></script>
+</body>
+</html>
